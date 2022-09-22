@@ -10,4 +10,4 @@ export const GITHUB_SCOPES = [
   'read:gpg_key',
 ];
 
-export const REDIRECT_URI = `${DOMAIN}/github/login`;
+export const REDIRECT_URI = `${DOMAIN}/api/github/login`;
