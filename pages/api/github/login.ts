@@ -32,7 +32,7 @@ export default async function login(
       });
       const { access_token } = await githubRes.json();
         
-      return res.status(200).redirect(`${DEEPLINK_PROTOCOL}/auth?token=${access_token}`);
+      return res.status(200).redirect(`${DEEPLINK_PROTOCOL}auth?token=${access_token}`);
     }
     
     const redirect = new URL(`https://github.com/login/oauth/authorize`);
